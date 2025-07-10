@@ -1,0 +1,381 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    background-color: black;
+}
+body::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+}
+
+:root{
+    --golden-color: white;
+}
+
+/* poster img  */
+.poster-image{
+   margin-top: 5%;
+}
+.poster-image img{
+    width: 100vw;
+}
+
+/*intigrated whatsapp chats */
+.whatsapp-wedge{
+    position: absolute;
+    top: 85%;
+    z-index: 2222;
+    left: 45px;
+    cursor: pointer;
+    position: fixed;
+}
+.whatsapp-chat-wedge{
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    position: absolute;
+    left: 50px;
+    width: 145px;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(99, 97, 97);
+    top: -10px;
+    display: none;
+}
+.whatsapp-chat{
+    color: white;
+    width: 44px;
+}
+
+/* mobile poster image hide on window or mac  */
+.mobile-poster-image{
+    display: none;
+}
+
+
+/* discover your assent message  */
+.container {
+    width: 100vw;
+    height: 40px;
+    overflow: hidden;
+    background-color:black;
+    margin: -5px 0px 0px 0px;
+}
+.message-loop {
+    display: flex;
+    gap: 30px;
+    width: max-content;
+    height: 40px;
+    padding: 10px;
+    white-space: nowrap;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    animation: scroll-left 25s linear infinite;
+    
+
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.loop-msg {
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.container-content{
+    width: 100vw;
+    height: auto;
+    background-color: rgb(14, 13, 13);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+     padding: 100px 0px 100px 0px;
+}
+.metaman-heading-content, .metamann-paragraph{
+    color: var(--golden-color);
+    padding: 8px;
+
+}
+.metaman-heading-content{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    font-size: 30px;
+}
+.metamann-paragraph{
+    font-family: 'Roboto',sans-serif;
+    font-weight: 500;  
+}
+.button-more{
+    margin: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* product advertisment  */
+.advertisment-heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    height: auto;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    color: rgb(158, 153, 153);
+    font-size: 45px;
+    margin: 20px 0px 20px 0px;
+
+}
+
+/* product poster carousel */
+/* All .poster elements should slide in a 360° rotating carousel style (like a spinning wheel or circular rotation).
+
+The image in front (visible) should zoom in to grab attention. */
+.carousel{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+.advertisment-home{
+    width: 100%;
+    height: auto;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+
+}
+.poster{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(29, 28, 28);
+    /* border-top-left-radius: 20px;
+    border-top-right-radius: 20px; */
+    border-radius: 20px;
+    
+}
+.poster img{
+    width: 400px;
+    height: 400px;
+    /* border-top-left-radius: 20px;
+    border-top-right-radius: 20px; */
+    border-radius: 20px;
+}
+.poster-content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+   border-radius: 50px;
+   font-family: 'Roboto', sans-serif;
+}
+.poster-header{
+    color: white;
+    font-size:25px;
+    font-weight: 800;
+    margin: 0px 0px 5px 0px;
+}
+.poster-paragraph{
+    color: white;
+    font-size: 16px;
+    font-weight: 300;
+
+}
+.button{
+    margin: 15px 0px 0px 0px;
+}
+.button button{
+    width: auto;
+    padding: 12px;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+}
+.button button:hover{
+       background-color: rgb(42, 71, 33);
+    transform: scale(1.1);
+    transform: transform 0.4s ease;
+}
+
+.button-more1 button{
+    width: auto;
+    height: auto;
+    padding: 12px;
+    font-size: 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.button-more1 button:hover{
+    background-color: rgb(42, 71, 33);
+    transform: scale(1.1);
+    transform: transform 0.4s ease;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* clear grid layout */
+#grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    font-family: 'Roboto', sans-serif;
+}
+.grid-all{
+    width: auto;
+    height: auto;
+    width: auto;
+}
+#grid2 img{
+width: 100%;
+height: 100%;
+}
+#grid3 img{
+width: 100%;
+height: 100%;
+}
+#grid6 img{
+width: 100%;
+height: 100%;
+}
+
+ #grid1, #grid4, #grid5{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+
+ }
+ .grid-flex{
+    color: white;
+    margin: 0px 120px 100px 120px;
+
+}
+.exculive{
+    font-size: 30px;
+    font-weight: 800;
+    margin: 0px 0px 20px 0px;
+    color: rgb(160, 158, 158);
+}
+.grid-header{
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    margin: 0px 0px 20px 0px;
+}
+.grid-para{
+    color: rgb(150, 72, 72);
+    font-weight: 400;
+    font-size: 16px;
+    margin: 0px 0px 50px 0px;
+}
+/* .button3{
+   
+} */
+.button3 button{
+    width: auto;
+    font-size: 16px;
+    padding: 10px;
+    font-weight: 500;
+    border-radius: 4px;
+    border: none;
+    background-color: rgb(61, 60, 60);
+
+}
+
+@media screen and (max-width: 768px){
+    body{
+        width: 100%;
+        /* overflow-x: hidden; */
+    }
+    .poster-image img{
+       display: none;
+    }
+    .mobile-poster-image {
+        display: block;
+        position: absolute;
+        top: 15%;
+    }
+    .mobile-poster-image img{
+        width: 100%;
+    }
+    .container{
+        margin-top: 600px;
+    }
+
+    /* product section start  */
+    .advertisment-home{
+      margin: 100px 0px 0px 0px;
+    }
+    .container-content{
+      
+    }
+    .metaman-heading-content{
+      font-size: 22px;
+
+    }
+    .metamann-paragraph{
+        font-size: 14px;
+        text-align: center;
+    }
+    .advertisment-home{
+      overflow: scroll;
+      height: auto;
+      
+
+    }
+
+
+    /* grid adjustment for mobile view */
+    #grid{
+       grid-template-columns: 1fr;
+    } 
+    #grid2{
+        grid-row: 1/2;
+    }
+    #grid6{
+        grid-row: 5/6;
+    }
+    .grid-flex{
+        margin: 40px 15px 40px 15px;
+        
+    }
+
+
+
+
+    
+}

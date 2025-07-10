@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --bodyBackgroundColor: rgb(0, 0, 0);
+    --border-color: silver;
+
+}
+body{
+    width: 100%;
+    height: auto;
+    background-color: var(--bodyBackgroundColor);
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+body::-webkit-scrollbar{
+    width: 0px;
+    height: 0px;
+}
+main{
+    margin: 140px 0px 0px 0px;
+}
+.slider-poster img{
+width: 100vw;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid var(--border-color);
+    margin: none;
+    font-size: 10px;
+}
+.filter{
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--border-color);
+    padding: 10px 40px 10px 40px;
+    border-bottom: none;
+    border-top: none;
+    border-left: none;
+
+}
+.short{
+    display: flex;
+    align-items: center;
+    border: 2px solid var(--border-color);
+    border-bottom: none;
+    border-top: none;
+    border-right: none;
+    padding: 10px 40px 10px 40px;
+}
+
+/* main grid layout  */
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+.filter-section{
+    width: auto;
+    height: 1050px;
+    border: 2px solid var(--border-color);
+    border-top: none;
+}
+.product-section{
+    width: auto;
+    height: 300px;
+    /* border: 2px solid var(--border-color); */
+    /* border-top: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto; */
+}
+.filter-content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+}
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+hr{
+  border: none;
+  height: 1px;
+  background-color: var(--border-color);
+}
+.product-grid-column1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.product-grid-column2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+/* .product-grid-column3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+} */
+.product img{
+   height: 420px;
+}
+.photo img{
+    height: 420px;
+}
+.product{
+  background-color: rgb(17, 17, 17);
+}
+.product-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: rgb(26, 26, 26); */
+    padding: 25px;
+}
+.product-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+}
+.product-info span{
+    width: 20px;
+    height: 4px; 
+}   
+.photo:hover{
+    cursor: pointer;
+    background-image: url('/asset/dateHover.png');
+}
+.photo img:hover{
+    opacity: 0;
+}
+
+
